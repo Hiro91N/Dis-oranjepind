@@ -1,0 +1,8 @@
+app = "dis-oranjepind-c7q9kq"
+primary_region = "nrt"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  app = "python3 bot.py"
