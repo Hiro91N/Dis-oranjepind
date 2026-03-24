@@ -1,10 +1,11 @@
 import discord
 import requests
-import os
 
 # 環境変数から取得（←ここが重要）
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+import os
+
+print("DISCORD_TOKEN:", os.getenv("DISCORD_TOKEN"))
+print("GOOGLE_API_KEY:", os.getenv("GOOGLE_API_KEY"))
 
 intents = discord.Intents.default()
 intents.message_content = True
